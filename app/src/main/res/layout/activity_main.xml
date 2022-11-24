@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/catbutton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="35dp"
+        android:onClick="playcat"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageButton
+        android:id="@+id/birdbutton"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="35dp"
+        android:background="#00FFFFFF"
+        android:onClick="playbird"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bird" />
+
+    <ImageButton
+        android:id="@+id/dogbutton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/catbutton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="-237dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="35dp"
+        android:background="#00FFFFFF"
+        android:onClick="playdog"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dog" />
+
+</RelativeLayout>
